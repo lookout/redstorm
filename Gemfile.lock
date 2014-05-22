@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    redstorm (0.7.0.beta1)
+    lookout-redstorm (0.7.1.beta1.lookout4.dev)
       rake
 
 GEM
@@ -40,6 +40,6 @@ PLATFORMS
 
 DEPENDENCIES
   coveralls
+  lookout-redstorm!
   redis
-  redstorm!
   rspec (~> 2.13)
