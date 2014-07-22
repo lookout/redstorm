@@ -7,6 +7,12 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (4.1.4)
+      i18n (~> 0.6, >= 0.6.9)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.1)
+      tzinfo (~> 1.1)
     colorize (0.5.8)
     coveralls (0.6.7)
       colorize
@@ -15,8 +21,18 @@ GEM
       simplecov (>= 0.7)
       thor
     diff-lcs (1.2.4)
+    i18n (0.6.11)
+    json (1.8.1)
+    json (1.8.1-java)
+    middleware (0.1.0)
     mime-types (1.23)
+    minitest (5.4.0)
     multi_json (1.7.7)
+    protobuf (3.0.5)
+      activesupport (>= 3.2)
+      middleware
+      multi_json
+      thor
     rake (10.0.4)
     redis (3.0.4)
     rest-client (1.6.7)
@@ -34,12 +50,18 @@ GEM
       simplecov-html (~> 0.7.1)
     simplecov-html (0.7.1)
     thor (0.18.1)
+    thread_safe (0.3.4)
+    thread_safe (0.3.4-java)
+    tzinfo (1.2.1)
+      thread_safe (~> 0.1)
 
 PLATFORMS
   java
+  ruby
 
 DEPENDENCIES
   coveralls
+  protobuf
   redis
   redstorm!
   rspec (~> 2.13)

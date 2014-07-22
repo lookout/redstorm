@@ -6,4 +6,5 @@ gem 'coveralls', require: false
 
 group :topology do
   gem "redis"
+  gem 'protobuf'
 end
